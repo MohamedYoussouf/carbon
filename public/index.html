@@ -6,9 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="bg-red-500">
-    <h1>oooooooooo</h1>
+<body class=" overflow-x-hidden">
+
+    <header class="bg-bg pt-8 pb-16">
+        <div class="container">
+            <nav class="flex justify-between font-medium">
+                <a href="#">John Doe</a>
+                <a href="#">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="container relative py-16 grid grid-cols-12 gap-8">
+            <div class="col-span-8 z-10 relative">
+                <h1 class="text-4xl font-medium leading-snug mb-16">Crafting digital solutions for the digital brands</h1>
+                <div class="grid grid-cols-8 gap-8">
+                    <span class="col-span-2">Learn more about how I can help</span>
+                    <a href="#" class="bg-primary px-8 py-4 text-white text-center rounded-full no-underline col-span-2">Let’s talk</a>
+                </div>
+            </div>
+            <img class="absolute top-48 -right-44 z-0" src="./images/portrait.png" alt="">
+        </div>
+    </header>
 </body>
 </html>
