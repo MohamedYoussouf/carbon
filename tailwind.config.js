@@ -11,12 +11,25 @@ module.exports = {
     },
     fontSize: {
       base: '16px',
+      xl: '31.99px',
+      '2xl': '45.23px',
+      '3xl': '63.96px',
       '4xl': '90.44px',
     },
     extend: {
       colors: {
-        bg: '#CCCCDB',
-        primary: '#2A2645'
+        bg: '#E1E1EA',
+        primary: '#1D1B25',
+        text: '#201F27'
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: 'translate3d(0, 0, 0)' },
+          to: { transform: 'translate3d(-100%, 0, 0)' },
+        }
+      },
+      animation: {
+        marquee: 'marquee 30s linear infinite',
       }
     },
   },

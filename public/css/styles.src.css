@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Poppins', sans-serif;
+    @apply text-text;
 }
