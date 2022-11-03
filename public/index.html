@@ -12,57 +12,61 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class=" overflow-x-hidden">
-    <header class="bg-bg pt-8 pb-16">
+    <header class="bg-bg pt-10 lg:pt-8 pb-0 lg:pb-16">
         <div class="container">
             <nav class="flex justify-between font-medium">
                 <a href="#">John Doe</a>
-                <a href="#">Home</a>
-                <a href="#">Work</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a class="hidden lg:inline" href="#">Home</a>
+                <a class="hidden lg:inline" href="#">Work</a>
+                <a class="hidden lg:inline" href="#">About</a>
+                <a class="hidden lg:inline" href="#">Contact</a>
+                <button class="inline lg:hidden"><svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="24" height="4" fill="#201F27"/>
+                    <rect x="12" y="10.5" width="12" height="4" fill="#201F27"/>
+                </svg></button>
             </nav>
         </div>
-        <div class="container relative py-16 grid grid-cols-12 gap-8">
-            <div class="col-span-8 z-10 relative">
-                <h1 class="text-4xl font-medium leading-snug mb-16">Crafting digital solutions for the digital brands</h1>
-                <div class="grid grid-cols-8 gap-8">
-                    <span class="col-span-2">Learn more about how I can help</span>
-                    <a href="#" class="bg-primary px-8 py-4 text-white text-center rounded-full no-underline col-span-2">Let’s talk</a>
+        <div class="container relative pt-16 lg:py-16 grid grid-cols-12 gap-8">
+            <div class="col-span-12 lg:col-span-8 z-10 relative">
+                <h1 class="text-2xl lg:text-4xl font-medium leading-snug mb-8 lg:mb-16">Crafting digital solutions for the digital brands</h1>
+                <div class="grid grid-cols-12 lg:grid-cols-8 gap-8">
+                    <span class="col-span-6 lg:col-span-2">Learn more about how I can help</span>
+                    <a href="#" class="bg-primary hover:bg-transparent px-8 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-6 lg:col-span-2 transition-colors duration-150">Let’s talk</a>
                 </div>
             </div>
-            <img class="absolute top-48 -right-44 z-0" src="./images/portrait.png" alt="">
+            <img class="relative lg:absolute top-8 lg:top-48 lg:-right-44 z-0 col-span-12 max-w-md lg:max-w-full" src="./images/portrait.png" alt="">
         </div>
     </header>
-    <section>
-        <div class="container relative py-16 grid grid-cols-12 gap-8 pt-72 pb-32">
-            <h2 class="text-xl col-span-8">I work with brands and businesses from all around the world to create high quality design and engaging experiences.</h2>
+    <section class="pt-8 lg:pt-72 pb-8 lg:pb-32">
+        <div class="container relative py-16 grid grid-cols-12 gap-8">
+            <h2 class="text-xl col-span-12 lg:col-span-8">I work with brands and businesses from all around the world to create high quality design and engaging experiences.</h2>
         </div>
     </section>
     <section>
-        <div class="w-full overflow-hidden flex whitespace-nowrap text-4xl font-medium uppercase">
+        <div class="w-full overflow-hidden flex whitespace-nowrap text-3xl lg:text-4xl font-medium uppercase">
             <div class="animate-marquee">
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
             </div>
             <div class="animate-marquee">
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
-                <span class="ml-10">Featured project</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
+                <span class="ml-10">Featured projects</span>
             </div>
         </div>
         <div class="container grid grid-cols-12 gap-8">
-            <div class="col-span-6">
+            <div class="col-span-12 lg:col-span-6">
                 <!-- Project card -->
                 <div class=" relative mb-16 mt-32">
                     <img class="relative -z-10" src="./images/work.png" alt="">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
                         <p>Project name</p>
-                        <h3 class="text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
+                        <h3 class="text-lg lg:text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
                     </div>
                 </div>
                 <!-- Project card -->
@@ -70,17 +74,17 @@
                     <img class="relative -z-10" src="./images/work.png" alt="">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
                         <p>Project name</p>
-                        <h3 class="text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
+                        <h3 class="text-lg lg:text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
                     </div>
                 </div>
             </div>
-            <div class="col-span-6">
+            <div class="col-span-12 lg:col-span-6">
                 <!-- Project card -->
                 <div class=" relative mb-16">
                     <img class="relative -z-10" src="./images/work.png" alt="">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
                         <p>Project name</p>
-                        <h3 class="text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
+                        <h3 class="text-lg lg:text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
                     </div>
                 </div>
                 <!-- Project card -->
@@ -88,7 +92,7 @@
                     <img class="relative -z-10" src="./images/work.png" alt="">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
                         <p>Project name</p>
-                        <h3 class="text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
+                        <h3 class="text-lg lg:text-xl font-medium">Nullam ac sed iaculis elit blandit enim morbi.</h3>
                     </div>
                 </div>
                 <div class="flex">
@@ -102,41 +106,41 @@
             </div>
         </div>
     </section>
-    <section class="pt-28 pb-40">
+    <section class="pt-16 lg:pt-28 pb-20 lg:pb-40">
         <div class="container relative grid grid-cols-12 gap-8">
-            <h2 class="text-2xl font-medium col-span-6 mb-12">I can help you with</h2>
+            <h2 class="text-xl lg:text-2xl font-medium col-span-12 lg:col-span-6 mb-12">I can help you with</h2>
         </div>
         <div class="container relative grid grid-cols-12 gap-8">
             <!-- Service card -->
-            <div class="col-span-4">
-                <h3 class="text-xl font-medium mb-4">Design</h3>
+            <div class="col-span-12 lg:col-span-4">
+                <h3 class="text-lg lg:text-xl font-medium mb-4">Design</h3>
                 <p>Tincidunt elementum, ut tortor suspendisse iaculis placerat diam sociis. Pretium viverra aliquam, libero vitae aliquam tortor</p>
             </div>
             <!-- Service card -->
-            <div class="col-span-4">
-                <h3 class="text-xl font-medium mb-4">Development</h3>
+            <div class="col-span-12 lg:col-span-4">
+                <h3 class="text-lg lg:text-xl font-medium mb-4">Development</h3>
                 <p>Tincidunt elementum, ut tortor suspendisse iaculis placerat diam sociis. Pretium viverra aliquam, libero vitae aliquam tortor</p>
             </div>
             <!-- Service card -->
-            <div class="col-span-4">
-                <h3 class="text-xl font-medium mb-4">Consulting</h3>
+            <div class="col-span-12 lg:col-span-4">
+                <h3 class="text-lg lg:text-xl font-medium mb-4">Consulting</h3>
                 <p>Tincidunt elementum, ut tortor suspendisse iaculis placerat diam sociis. Pretium viverra aliquam, libero vitae aliquam tortor</p>
             </div>
         </div>
     </section>
-    <footer class="py-24 bg-bg">
+    <footer class="pt-24 pb-8 bg-bg">
         <div class="container relative grid grid-cols-12 gap-8">
-            <div class="col-start-4 col-span-6 flex flex-col justify-center text-center mb-24 ">
-                <h2 class="text-3xl font-medium">Get in touch</h2>
-                <a href="#" class="bg-primary px-8 py-4 text-white text-center rounded-full no-underline self-center">Let’s talk</a>
+            <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-16 lg:mb-24 ">
+                <h2 class="text-2xl lg:text-3xl font-medium">Get in touch</h2>
+                <a href="#" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Let’s talk</a>
             </div>
-            <div class="col-span-8 col-start-3 flex justify-between text-lg font-medium mb-8">
+            <div class="col-span-12 lg:col-span-8 col-start-1 lg:col-start-3 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between space-y-4 lg:space-y-0 text-lg font-medium mb-8">
                 <a href="#">Github</a>
                 <a href="#">LinkedIn</a>
                 <a href="#">Twitter</a>
                 <a href="#">Instagram</a>
             </div>
-            <div class="col-span-12 flex justify-between">
+            <div class="col-span-12 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between space-y-4 lg:space-y-0">
                 <p>© 2022 All rights reserved.</p>
                 <p>Designed by <a class="font-bold" href="https://www.myoussouf.com/">MYoussouf</a></p>
             </div>
