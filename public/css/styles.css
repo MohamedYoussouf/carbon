@@ -628,6 +628,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .inline {
   display: inline;
 }
@@ -911,24 +915,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-8 {
-    grid-column: span 8 / span 8;
+  .md\:col-span-12 {
+    grid-column: span 12 / span 12;
   }
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .md\:col-span-10 {
-    grid-column: span 10 / span 10;
-  }
-
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .md\:col-span-12 {
-    grid-column: span 12 / span 12;
   }
 
   .md\:col-span-6 {
@@ -939,12 +931,16 @@ body {
     grid-column: span 4 / span 4;
   }
 
-  .md\:col-start-1 {
-    grid-column-start: 1;
+  .md\:col-span-10 {
+    grid-column: span 10 / span 10;
   }
 
   .md\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .md\:mt-32 {
+    margin-top: 8rem;
   }
 
   .md\:inline {
@@ -955,20 +951,12 @@ body {
     display: none;
   }
 
-  .md\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .md\:max-w-5xl {
     max-width: 64rem;
   }
 
   .md\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -989,12 +977,16 @@ body {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:pt-28 {
+    padding-top: 7rem;
+  }
+
   .md\:text-3xl {
     font-size: 63.96px;
   }
 
-  .md\:text-xl {
-    font-size: 31.99px;
+  .md\:text-2xl {
+    font-size: 45.23px;
   }
 }
 
@@ -1023,10 +1015,6 @@ body {
     grid-column: span 6 / span 6;
   }
 
-  .lg\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
-
   .lg\:col-start-4 {
     grid-column-start: 4;
   }
@@ -1043,34 +1031,8 @@ body {
     margin-bottom: 6rem;
   }
 
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:max-w-full {
     max-width: 100%;
-  }
-
-  .lg\:grid-cols-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:items-start {
-    align-items: flex-start;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between;
-  }
-
-  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .lg\:py-16 {
