@@ -31,6 +31,9 @@ module.exports = {
       },
       animation: {
         marquee: 'marquee 30s linear infinite',
+      },
+      height: {
+        'screen-90': '90vh'
       }
     },
   },
