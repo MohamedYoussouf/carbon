@@ -9,15 +9,14 @@ module.exports = {
         xl: '1156px',
       },
     },
-    fontSize: {
-      base: '16px',
-      lg: '22.62px',
-      xl: '31.99px',
-      '2xl': '45.23px',
-      '3xl': '63.96px',
-      '4xl': '90.44px',
-    },
     extend: {
+      fontSize: {
+        lg: '22.62px',
+        xl: '31.99px',
+        '2xl': '45.23px',
+        '3xl': '63.96px',
+        '4xl': '90.44px',
+      },
       colors: {
         bg: '#E1E1EA',
         primary: '#1D1B25',
