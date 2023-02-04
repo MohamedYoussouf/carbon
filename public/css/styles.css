@@ -588,20 +588,20 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .col-start-1 {
   grid-column-start: 1;
+}
+
+.col-start-8 {
+  grid-column-start: 8;
+}
+
+.col-start-9 {
+  grid-column-start: 9;
 }
 
 .my-8 {
@@ -651,6 +651,14 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.block {
+  display: block;
 }
 
 .inline {
@@ -787,6 +795,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -799,6 +811,16 @@ video {
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(29 27 37 / var(--tw-border-opacity));
+}
+
+.border-text {
+  --tw-border-opacity: 1;
+  border-color: rgb(32 31 39 / var(--tw-border-opacity));
+}
+
+.border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 
 .bg-bg {
@@ -846,6 +868,11 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-10 {
@@ -955,6 +982,11 @@ video {
   text-decoration-line: none;
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -981,6 +1013,26 @@ body {
   color: rgb(32 31 39 / var(--tw-text-opacity));
 }
 
+.placeholder\:text-red-500::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-text::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(32 31 39 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-text::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(32 31 39 / var(--tw-text-opacity));
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -990,9 +1042,27 @@ body {
   color: rgb(29 27 37 / var(--tw-text-opacity));
 }
 
+.focus\:border-text:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(32 31 39 / var(--tw-border-opacity));
+}
+
+.focus-visible\:border-text:focus-visible {
+  --tw-border-opacity: 1;
+  border-color: rgb(32 31 39 / var(--tw-border-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:col-span-10 {
     grid-column: span 10 / span 10;
+  }
+
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .md\:col-span-8 {
+    grid-column: span 8 / span 8;
   }
 
   .md\:col-span-12 {
@@ -1003,20 +1073,20 @@ body {
     grid-column: span 2 / span 2;
   }
 
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
 
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
+  .md\:col-span-7 {
+    grid-column: span 7 / span 7;
   }
 
   .md\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .md\:col-start-9 {
+    grid-column-start: 9;
   }
 
   .md\:inline {
@@ -1091,12 +1161,12 @@ body {
     grid-column: span 6 / span 6;
   }
 
-  .lg\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .lg\:col-start-4 {
@@ -1119,16 +1189,12 @@ body {
     margin-bottom: 6rem;
   }
 
-  .lg\:mb-16 {
-    margin-bottom: 4rem;
-  }
-
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .lg\:h-screen-90 {
@@ -1156,6 +1222,10 @@ body {
     padding-bottom: 2rem;
   }
 
+  .lg\:pb-40 {
+    padding-bottom: 10rem;
+  }
+
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -1170,10 +1240,6 @@ body {
 
   .lg\:pt-28 {
     padding-top: 7rem;
-  }
-
-  .lg\:pb-40 {
-    padding-bottom: 10rem;
   }
 
   .lg\:text-3xl {
