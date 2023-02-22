@@ -1,8 +1,13 @@
+/*
+*   Import TailwindCSS
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/*
+*   General style
+*/
 body {
     font-family: 'Poppins', sans-serif;
     @apply text-text;
