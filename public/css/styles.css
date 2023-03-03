@@ -1,4 +1,8 @@
 /*
+*   Import TailwindCSS
+*/
+
+/*
 ! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
 */
 
@@ -560,14 +564,6 @@ video {
   top: 2rem;
 }
 
-.-right-8 {
-  right: -2rem;
-}
-
-.-right-4 {
-  right: -1rem;
-}
-
 .-right-2 {
   right: -0.5rem;
 }
@@ -689,28 +685,12 @@ video {
   width: 100%;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
 .w-10 {
   width: 2.5rem;
 }
 
-.w-8 {
-  width: 2rem;
-}
-
-.w-9 {
-  width: 2.25rem;
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .max-w-sm {
@@ -1024,6 +1004,10 @@ video {
 .duration-500 {
   transition-duration: 500ms;
 }
+
+/*
+*   General style
+*/
 
 body {
   font-family: 'Poppins', sans-serif;
