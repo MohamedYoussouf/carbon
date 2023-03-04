@@ -1,7 +1,9 @@
 # Carbon
 ![Thumbnail](thumbnail.png)
 
-Carbon is free TailwindCSS portfolio template that's perfect for developers and designers. It comes with a high-quality design and all the essential components & pages you need to launch a complete portfolio website
+Carbon is free TailwindCSS portfolio template that's perfect for developers and designers. It comes with a high-quality design and all the essential components & pages you need to launch a complete portfolio website.
+
+[Live Preview](https://carbon-theme.netlify.app/)
 
 **Features:**
 - Responsive
